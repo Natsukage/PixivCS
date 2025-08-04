@@ -134,7 +134,7 @@ public record UserProfile
     /// 出生年份
     /// </summary>
     [JsonPropertyName("birth_year")]
-    public int BirthYear { get; init; }
+    public int? BirthYear { get; init; }
 
     /// <summary>
     /// 地区
@@ -146,7 +146,7 @@ public record UserProfile
     /// 地址ID
     /// </summary>
     [JsonPropertyName("address_id")]
-    public int AddressId { get; init; }
+    public int? AddressId { get; init; }
 
     /// <summary>
     /// 国家代码
