@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Natsukage</Authors>
     <Company />
     <Description>C# version of Pixiv API for .NET 8.0. A complete rewrite based on pixivpy with modern C# features and improved performance.</Description>
@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/Natsukage/PixivCS</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Pixiv;PixivAPI;API;Illust;Novel;Anime;Manga;Art;Download;C#;NET8</PackageTags>
-    <PackageReleaseNotes>v0.1.1 - Fixed UserProfile deserialization issues with nullable fields (BirthYear, AddressId) to properly handle Pixiv API v2 responses.</PackageReleaseNotes>
+    <PackageReleaseNotes>v0.1.2 - Fixed UserProfile gender field type from string? to int? to match Pixiv API v2 endpoint response. Gender values: null=not set, 0=not set, 1=male, 2=female.</PackageReleaseNotes>
     <Copyright>Copyright (c) 2025 Natsukage</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Nullable>enable</Nullable>
