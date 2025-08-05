@@ -113,10 +113,10 @@ public record UserProfile
     public string? Webpage { get; init; }
 
     /// <summary>
-    /// 性别
+    /// 性别 (0=未设置, 1=男性, 2=女性)
     /// </summary>
     [JsonPropertyName("gender")]
-    public string? Gender { get; init; }
+    public int? Gender { get; init; }
 
     /// <summary>
     /// 生日信息
